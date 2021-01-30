@@ -54,7 +54,7 @@ hr {
 .thumbnail {
     
     height:250px;
-    margin-bottom:20px;
+    margin-bottom: 8%;
     object-fit: contain;
     width: 450px;
 }
