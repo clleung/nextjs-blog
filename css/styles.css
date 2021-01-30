@@ -5,8 +5,12 @@ Regular 400
 Medium 500
 Bold 700
 */
+@media only screen and (min-width: 1240px){
+    
+}
 /*
 Styles
+
 1. General Styles
 
 2. Navigation Styles
@@ -35,6 +39,7 @@ nav {
 
 }
 .projects {
+    margin-top: 50px;
     max-width: 75%;
 }
 .intro {
