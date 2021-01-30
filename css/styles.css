@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+/*
+DM Sans
+Regular 400
+Medium 500
+Bold 700
+*/
+/*
+Styles
+1. General Styles
+
+2. Navigation Styles
+*/
+body {
+    background-color: #F8F8F8;
+    color: #041520;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    
+}
+/*Navigation Styles*/
+nav {
+    background-color: #E2EBF1;
+}
+.nav-link {
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+
+}
+.nav-h {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+
+}
+.projects {
+    max-width: 75%;
+}
+.intro {
+    padding: 50px 0px 15px;
+}
+
+hr {
+    width: 45%;
+    background-color: #041520;
+}
+
+.thumbnail {
+    
+    height:250px;
+    margin-bottom:20px;
+    object-fit: contain;
+    width: 450px;
+}
