@@ -16,7 +16,7 @@ Styles
 2. Navigation Styles
 */
 body {
-    background-color: #F8F8F8;
+    background-color: red; /*#F8F8F8;*/
     color: #041520;
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
@@ -31,6 +31,9 @@ nav {
     font-weight: 400;
     letter-spacing: 2.5px;
 
+}
+.nav-link:hover{
+    color: red;
 }
 .nav-h {
     font-size: 1rem;
