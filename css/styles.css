@@ -8,12 +8,15 @@ Bold 700
 @media (max-width: 500px){
     .thumbnail {
     
-        height:62.5px;
+        height:125px;
         margin-bottom: 8%;
-        width: 112.5px;
+        width: 225px;
+    }
+    .blurb {
+        width: 100%;
     }
 }
-@media (max-width: 640px){
+@media (min-width: 501px) and (max-width: 640px){
     .thumbnail {
     
         height:200px;
@@ -21,7 +24,11 @@ Bold 700
         
         width: 360px;
     }
+    .blurb {
+        width: 50%;
+    }
 }
+
 @media (min-width: 641px){
     .thumbnail {
     
@@ -30,7 +37,11 @@ Bold 700
         
         width: 450px;
     }
+    .blurb {
+        width: 30%;
+    }
 }
+
 /*
 Github:
 https://github.com/logos 
@@ -56,6 +67,7 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.6rem;
+    width: 100%;
 }
 h2{
     line-height: 2.5rem;
@@ -106,7 +118,7 @@ a:hover {
     padding: 50px 0px 15px;
 }
 .blurb {
-    width: 50%;
+    width: 30%;
 }
 hr {
     width: 45%;
@@ -119,9 +131,10 @@ hr {
 }
 
 
-img.icon {
+.icon {
     margin: 1% 1%;
-    width: 2.5rem;
+    width: 3rem;
+    min-width: 25px;
 }
 
 [class $= "layer"]{
@@ -145,20 +158,81 @@ img.icon {
 .headshot{
     margin: 1%;
 }
+
+/*Carousel Styles*/
+#carouselExampleIndicators {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
 .carousel{
     display: block;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: 80%;
+    transform-style: preserve-3d;
 }
+.carousel-wrapper * {
+    box-sizing: border-box;
+  }
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display:block;
+    overflow: hidden;
+  }
+
+#carousel-fit-image{
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
 .summary{
+    margin-top: 0;
     max-width: 50%;
     
 }
 .work{
     margin-top: 2rem;
 }
+[id $= "visuals"]{
+    align-items: center;
+    display: block;
+}
 .hidden{
     visibility: hidden;
+}
+
+
+.modal-subtitle{
+    line-height:1.6rem;
+}
+.modal-location{
+    color: #0415208f;
+    font-family: 'DM Sans', sans-serif;
+    font-size: .9rem;
+    line-height:1.1rem;
+}
+.modal-header{
+    padding-bottom:0;
+}
+.modal-body{
+    padding-top:0;
+    line-height: 2rem;
+}
+.modalnail{
+    height:300px;
+    margin-bottom: 8%;
+    
+    width: 540px;
+}
+.btn{
+    padding: .5rem .1.25rem;
+}
+.to-work{
+    color: #041520;
+    background-color: #C1D2DE;
+    border-color: #C1D2DE;
 }

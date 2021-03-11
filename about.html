@@ -9,7 +9,6 @@
     <meta name = "author" content = "Lisa Leung">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
-
    
     <!-- Bootstrap core CSS -->
     <link href = "css/bootstrap.min.css" rel = "stylesheet">
@@ -26,50 +25,63 @@
 <body>
   
     <!--navbar adapted from https://getbootstrap.com/docs/4.0/components/navbar/-->
-    <!--navbar adapted from https://getbootstrap.com/docs/4.0/components/navbar/-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-      <a class="navbar-brand brand p-4" href="index.html">LISA L.</a>
+        <a class="navbar-brand brand p-4" href="index.html">LISA L.</a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item p-4">
-            <a class="nav-link " href="index.html">WORK</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item p-4">
+              <a class="nav-link " href="index.html">WORK </a>
+            </li>
+            <li class="nav-item active p-4">
+              <a class="nav-link" href="about.html">ABOUT<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item p-4">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item p-4">
+              <a class="nav-link" href="files/Lisa Leung Resume.pdf" target="_blank">RESUME</a>
           </li>
-          <li class="nav-item active p-4">
-            <a class="nav-link" href="about.html">ABOUT<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item p-4">
-            <a class="nav-link" href="contact.html">CONTACT</a>
-          </li>
-          <li class="nav-item p-4">
-            <a class="nav-link" href="files/Lisa Leung Resume.pdf" target="_blank">RESUME</a>
-        </li>
-        
           
-        </ul>
-      </div>
-  </nav> <!--end nav-->
+          </ul>
+        </div>
+    </nav> <!--end nav-->
   
     <div class = "intro text-center">
-      <h3>About</h3>
+      <h3>Bio</h3>
       <img class = "headshot mx-auto d-block" src = "images/personal-photo.png">
-      <br>
-      <p class ="about mx-auto d-block">
-        Lisa Leung (she/her) is a researcher, designer, and developer passionate about learning and finding interdisciplinary solutions. In particular, she’s interested in UI/UX, product management, technical writing, usable privacy and security, as well as AI.
-        <br>
-        <br>
-        Lisa is currently a sophomore in Information Systems at Carnegie Mellon University pursuing additional degrees in Human-Computer Interation and Technical Writing and Communications.
-        <br>
-        <br>
-        In her free time, Lisa enjoys cooking international dishes, doing yoga, and exploring Pittsburgh (primarily by walking in parks away from others due to the pandemic). 
-          
-      </p>
     </div> <!--end intro-->
-  
+    <div class = "summary container">
+      <div class = "row">
+        <div class = "col">
+          <p>
+            <a href = "mailto:clleung@andrew.cmu.edu">clleung@andrew.cmu.edu</a><br>
+            <a href = "mailto:cholinleung@gmail.com">cholinleung@gmail.com</a><br>
+            <br>
+            <a href = "https://www.linkedin.com/in/cho-lin-lisa-leung/">linkedin.com/in/cho-lin-lisa-leung/</a><br>
+            <a href = "https://github.com/clleung">github.com/clleung</a><br>
+            <br>
+            <br>
+          </p>
+        </div>
+        <div class = "col">
+          <p>
+            Lisa Leung (she/her) is a researcher, designer, and developer passionate about learning and finding interdisciplinary solutions. In particular, she is interested in UI/UX, product management, technical writing, usable privacy and security, and designing with AI.
+            <br>
+            <br>
+            Lisa is currently a sophomore in Information Systems at Carnegie Mellon University pursuing additional degrees in Human-Computer Interation and Technical Writing and Communications.
+            <br>
+            <br>
+            In her free time, Lisa enjoys cooking international dishes, doing yoga, and exploring Pittsburgh (primarily by walking in parks away from others due to the pandemic). 
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
     <br>
     
     
@@ -79,15 +91,15 @@
     <h1 class = "brand">LISA L.</h1>
     <hr>
     <!--insert icons here-->
-    <a href = "mailto:clleung@andrew.cmu.edu"><img class = "icon" src = "images/gmail.svg"></a>
-    <a href = "https://www.linkedin.com/in/cho-lin-lisa-leung/"><img class = "icon" src = "images/LI-In-Bug.png"></a>
-    <a href = "https://github.com/clleung/portfolio"><img class = "icon" src = "images/GitHub-Mark-120px-plus.png"></a>
+    <a href = "mailto:clleung@andrew.cmu.edu"><img class = "icon" src = "images/icons/email.png"></a> <!--icon created by Lisa Leung, March 10, 2021-->
+    <a href = "https://www.linkedin.com/in/cho-lin-lisa-leung/"><img class = "icon" src = "images/icons/LI-In-Bug.png"></a>
+    <a href = "https://github.com/clleung"><img class = "icon" src = "images/icons/GitHub-Mark-120px-plus.png"></a>
   </div> <!--end top-layer-->
   <div class = "mid-layer">
     <p>Hosted on GitHub Pages and made with <a href = "https://getbootstrap.com/docs/4.0/about/license/"><strong>Bootstrap</strong></a>.
     <br>
     <br>
-       This site is maintained by <a href = "https://github.com/clleung/portfolio" ><strong>Lisa Leung</strong></a>. View this project on <a href = "https://github.com/clleung/portfolio"><strong>GitHub</strong></a>.
+       This site is maintained by <a href = "https://github.com/clleung" ><strong>Lisa Leung</strong></a>. View this project on <a href = "https://github.com/clleung/portfolio"><strong>GitHub</strong></a>.
     </p>
     
   </div> <!--end mid-layer-->
@@ -100,4 +112,5 @@
   </div> <!--end bot-layer-->
 </footer>
 </html>
+
 
