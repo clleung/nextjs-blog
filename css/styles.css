@@ -55,7 +55,13 @@ body {
     color: #041520;
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
-    
+    line-height: 1.6rem;
+}
+h2{
+    line-height: 2.5rem;
+}
+#subheading {
+    font-size: .85rem;
 }
 p {
     margin: 0;
@@ -138,4 +144,21 @@ img.icon {
 }
 .headshot{
     margin: 1%;
+}
+.carousel{
+    display: block;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+.summary{
+    max-width: 50%;
+    
+}
+.work{
+    margin-top: 2rem;
+}
+.hidden{
+    visibility: hidden;
 }
