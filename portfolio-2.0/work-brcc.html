@@ -2,54 +2,55 @@
 <!doctype html>
 <html lang = "en">
   <head>
-    <meta charset = "utf-8">
-    <meta name = "viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name = "description" content="Lisa Leung">
     <meta name = "keywords" content = "portfolio, CMU, IS, Information Systems, Carnegie Mellon University, Cho-Lin Leung">
     <meta name = "author" content = "Lisa Leung">
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
-   
-    <!-- Bootstrap core CSS -->
-    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <title>Lisa Leung</title>
+    <!--ADD: favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
     
-     <!-- CSS-->
-     <link href = "css/styles.css" rel = "stylesheet"> 
 
-    <!-- Javascript-->
+    <!--CSS STYLESHEETS-->
+    <link href="css/uikit.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="css/portfolio-styles.css" rel="stylesheet">
+
     <script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-  </head>
+
+
+</head>
 
 <body>
-  
-    <!--navbar adapted from https://getbootstrap.com/docs/4.0/components/navbar/-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand brand p-4" href="index.html">LISA L.</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo brand" href="index.html">LISA LEUNG</a>
+    </div>
+    <div class="uk-navbar-right">
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active p-4">
-              <a class="nav-link " href="index.html">WORK <span class="sr-only">(current)</span></a>
+        <ul class="uk-navbar-nav">
+            <li class="uk-active active nav-item a-ua p-4"><a href="index.html">WORK</a></li>
+            <!--<li class="nav-item a-ua p-4">
+                <a href="about.html">ABOUT</a>
             </li>
-            <li class="nav-item p-4">
-              <a class="nav-link" href="about.html">ABOUT</a>
+            <li class="nav-item a-ua p-4">
+                <a href="contact.html">CONTACT</a>
             </li>
-            <li class="nav-item p-4">
-              <a class="nav-link" href="contact.html">CONTACT</a>
+        -->
+            <li class="nav-item a-ua p-4">
+                <a href="files/Lisa Leung Resume 09.21.21.pdf" target="_blank">RESUME</a>
             </li>
-            <li class="nav-item p-4">
-              <a class="nav-link" href="files/Lisa Leung Resume.pdf" target="_blank">RESUME</a>
-          </li>
-          
-          </ul>
-        </div>
-    </nav> <!--end nav-->
+        </ul>
+    </div>
+  </nav>
     
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -462,38 +463,118 @@
       
     </div><!--end work reflection-->
     <div class="projects container">
+      <div class="row">
+          <div class="col">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn mx-auto d-block" data-toggle="modal" data-target="#opplab-modal">
+              <img class="thumbnail rounded shadow" src = "images/gallery/Opplab-thumbnail.png" alt="...">
+            </button> 
+             
+          </div>
+          <div class="col">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn mx-auto d-block" data-toggle="modal" data-target="#brcc-modal">
+              <img class="thumbnail rounded shadow" src = "images/gallery/brcc-thumbnail.png" alt="...">
+            </button>        
+          </div>
+          
+      </div> <!--end row-->
+      <div class="row">
+          <div class="col">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn mx-auto d-block" data-toggle="modal" data-target="#icafe-modal">
+              <img class="thumbnail rounded shadow" src = "images/gallery/aws.jpg" alt="...">
+            </button> 
+          </div>
+          <div class="col">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn mx-auto d-block" data-toggle="modal" data-target="#spotify-modal">
+              <img class="thumbnail rounded shadow" src = "images/gallery/Spotify-thumbnail.png" alt="...">
+            </button>           
+          </div>
+      </div> <!--end row-->
+      <div class="row">
+          <div class="col">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn mx-auto d-block" data-toggle="modal" data-target="#dual-modal">
+              <img class="thumbnail rounded shadow" src = "images/gallery/Dual-thumbnail.png" alt="...">
+            </button>   
+          </div>
+          <div class="col">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn mx-auto d-block" data-toggle="modal" data-target="#design-modal">
+              <img class="thumbnail rounded shadow" src = "images/gallery/Design-thumbnail.png" alt="...">
+            </button>          
+          </div>
+      </div> <!--end row-->
+    </div> <!--end projects container-->
+    <div class="projects container">
       <h6 class = "text-center">View more of my work below:</h6>
       <br>
       <br>
       <div class="row">
           
           <div class="col">
-            <a href = "work-brcc.html">
-              <img class="thumbnail rounded mx-auto d-block shadow" src = "images/gallery/brcc-thumbnail.png" alt="...">
-            </a>          
+            <div>
+              <button class="uk-button uk-button-link	uk-margin-small-right uk-padding-remove" type="button" uk-toggle="target: #offcanvas-slide-opp">
+                <div class="uk-card uk-card-link uk-card-small uk-card-body uk-padding-remove uk-card-hover ">
+                    <img class = "gallery uk-border-rounded uk-box-shadow-medium" data-src="images/gallery/opp.jpg" uk-img>
+                </div>
+              </button>      
+            </div>
           </div>
           <div class="col">
-            <img class="thumbnail  rounded mx-auto d-block shadow" src = "images/gallery/icafe-thumbnail.png" alt="...">
+            <div>
+              <button class="uk-button uk-button-link	uk-margin-small-right uk-padding-remove" type="button" uk-toggle="target: #offcanvas-slide-aws">
+                <div class="uk-card uk-card-link uk-card-small uk-card-body uk-padding-remove uk-card-hover ">
+                    <img class = "uk-border-rounded uk-box-shadow-medium" data-src="images/gallery/aws.jpg" uk-img>
+                </div>
+              </button>
+            </div>
         </div>
       </div> <!--end row-->
       <div class="row">
           
           <div class="col">
-              <img class="thumbnail  rounded mx-auto d-block shadow" src = "images/gallery/spotify-thumbnail.png" alt="...">
+            <div>
+              <button class="uk-button uk-button-link	uk-margin-small-right uk-padding-remove" type="button" uk-toggle="target: #offcanvas-slide-reb">
+                <div class="uk-card uk-card-link uk-card-small uk-card-body uk-padding-remove uk-card-hover ">
+                    <img class = "uk-border-rounded uk-box-shadow-medium" data-src="images/gallery/reb.jpg" uk-img>
+                </div>
+              </button>
+            </div>
           </div>
           <div class="col">
-            <img class="thumbnail rounded mx-auto d-block shadow" src = "images/gallery/design-thumbnail.png" alt="...">
+            <div>
+              <button class="uk-button uk-button-link	uk-margin-small-right uk-padding-remove" type="button" uk-toggle="target: #offcanvas-slide-data">
+                <div class="uk-card uk-card-link uk-card-small uk-card-body uk-padding-remove uk-card-hover ">
+                    <img class = "gallery uk-border-rounded uk-box-shadow-medium" data-src="images/gallery/data.jpg" uk-img>
+                </div>
+              </button>
+            </div>
         </div>
       </div> <!--end row-->
       <div class="row">
           
           <div class="col">
-              <img class="thumbnail rounded mx-auto d-block shadow" src = "images/gallery/dual-thumbnail.png" alt="...">
+            <div>
+              <button class="uk-button uk-button-link	uk-margin-small-right uk-padding-remove" type="button" uk-toggle="target: #offcanvas-slide-aui">
+                <div class="uk-card uk-card-link uk-card-small uk-card-body uk-padding-remove uk-card-hover ">
+                    <img class = "uk-border-rounded uk-box-shadow-medium" data-src="images/gallery/aui.jpg" uk-img>
+                </div>
+              </button>
+            </div>
           </div>
           <div class="col">
-            <a href = "work-brcc.html">
-              <img class="thumbnail rounded mx-auto d-block shadow" src = "images/gallery/opplab-thumbnail.png" alt="...">
-            </a>
+            <div>
+              <button class="uk-button uk-button-link	uk-margin-small-right uk-padding-remove" type="button" uk-toggle="target: #offcanvas-slide-brcc">
+                <div class="uk-card uk-card-link uk-card-small uk-card-body uk-padding-remove uk-card-hover ">
+                    <img class = "gallery uk-border-rounded uk-box-shadow-medium" data-src="images/gallery/brcc.jpg" uk-img>
+                </div>
+            </button>
+            </div>
+              
+            
         </div>
       </div> <!--end row-->
     </div> <!--end projects container-->
