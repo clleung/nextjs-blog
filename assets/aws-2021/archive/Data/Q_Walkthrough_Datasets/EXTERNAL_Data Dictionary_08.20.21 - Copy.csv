@@ -1,0 +1,35 @@
+,Description,Friendly Name,Synonyms,Dimension/Measure,Default Aggregation,Not allowed Aggregation,Semantic Type,Semantic Sub-Type,Value Format,Notes
+Users Table (csv name),list of user accounts for the business,,,,,,,,,
+user_id,unique number assigned to each user,user id,"user identification number, unique user, user, listeners, customers",Dimension,Count Distinct,Count,Identifier,,Number,
+country,listed country the user signed up in,country,"country of origin, location, join location",Dimension,Count Distinct,,Location,,Number,
+join_date,date user joined,user join date,"date joined, listener join, user join, join",Dimension,Count,,Date Part,,Number,
+age,age,age,"listener age, user age",Dimension,Count,,Date Part,,Number,
+,,,,,,,,,,
+Subscribers Table,,,,,,,,,,
+subscriber_id,unique number assigned to each subscriber,subscriber id,"subscriber identification number, subscriber, unique subscriber, member, paying customer, paying member, paying user, paying listeners, subscribers",Dimension,Count Distinct,Count,Identifier,,Number,
+cost,cost of subscription per year,subscription membership,"membership, membership price, membership cost, subscription revenue, yearly subscription cost, subscription price, subscription cost, yearly subscription",Measure,Count,,Currency,USD,Dollar,
+start_date,date subscriber joined,subscriber start date,subscription join date,Dimension,Count,,Date Part,,Number,
+user_id,unique number assigned to each user,user id,"user identification number, unique user, user, listeners, customers, people",Dimension,Count Distinct,Count,Identifier,,Number,copy of user_id from Users Table; links the information across tables
+,,,,,,,,,,
+Artists Table,,,,,,,,,,
+artist_id,unique number assigned to each artist,artist id,artist identification number,Dimension,Count Distinct,Count,Identifier,,Number,"the terms ""unique artist"" and ""artist"" are not user as synonyms, as they will be used in a named entity in the walkthrough"
+name,artist name (may not be unique),artist name,,Dimension,Count,Count Distinct,Person,,Number,Count distinct is not allowed because artists may use the same name
+monthly_listeners,number of users that listen to the artists' songs every month,monthly listeners,"monthly song listeners, monthly artist listeners",Measure,Sum,,Currency,,Number,The semantic type is Currency because it is most comparable to how it is used
+monthly_payment,amount paid to artists every month by contract (can be $0),monthly artist payment,"amount paid to artists per month, monthly artist salary, artist contracted salary, artist payment",Measure,Sum,,Currency,USD,Dollar,
+,,,,,,,,,,
+Songs Table,,,,,,,,,,
+song_id,unique number assigned to each song,song id,"song identification number, song, unique song, song id, song, song identification",Dimension,Count Distinct,Count,Identifier,,Number,
+release_date,date song released,song release date,"release date, song release, song published, song added",Dimension,Count,,Date Part,,Number,
+genre,song category,genre,"song genre, song category, song type",Dimension,Count Distinct,,Organization,,Number,
+total_streams,"total streams of the song (ever, not including the times streamed in the dataset)",total song streams,"overall song streams, total song streams",Measure,Count,,Currency,,Number,
+royalties,amount paid to artist per song streamed,song royalties,"song royalties, song payment, song cost, royalties",Measure,Count,,Currency,USD,Dollar,
+artist_id,unique number assigned to each artist,artist id,"artist identification number, artist identification",Dimension,Count Distinct,Count,Identifier,,Number,copy of artist_id from Artists Table; links the data
+,,,,,,,,,,
+Streams Table,,,,,,,,,,
+date_time,the date the song is streamed,stream date and time,"streams, stream date, stream time, stream date and time",Dimension,Count,,Date Part,,Number,Count distinct is not allowed because the days of the year/times that are streamed are not important for this walkthrough
+platform,"access mode of access (mobile, desktop, app)",platform,"stream access, platform, mobile, desktop, app, access, mobile platform, desktop platform, app platform",Dimension,Count ,Count Distinct,Organization,,Number,Count distinct is not allowed because there are only 3 access platforms
+song_id,unique number assigned to each song,song id,"song identification number, song, unique song, song id, song, song identification",Dimension,Count Distinct,Count,Identifier,,Number,Copy of song_id from Songs table; links data
+user_id,unique number assigned to each user,user id,"user identification number, unique user, user, listeners, customers",Dimension,Count Distinct,Count,Identifier,,Number,Copy of user_id from Users table; links data
+,,,,,,,,,,
+Calculated Field,,,,,,,,,,
+moving subscription revenue,,,,Measure,Sum,,Currency,USD,$Dollar,"Expression: WINDOWSUM({subscription membership}), [{subscription join date}], 12, 0)"

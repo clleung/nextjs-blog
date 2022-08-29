@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/images/favicon_io/site.webmanifest">
+        <!-- details -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name = "description" content="Lisa Leung">
+        <meta name = "keywords" content = "portfolio, CMU, IS, Information Systems, Carnegie Mellon University, Cho-Lin Leung">
+        <meta name = "author" content = "Lisa Leung">
+        <title>Lisa Leung</title>
+        <!--ADD: favicon-->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+
+         <!-- Bootstrap core CSS -->
+         <link href = "css/bootstrap.min.css" rel = "stylesheet">
+
+         <!-- Javascript-->
+         <script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script>window.jQuery || document.write('<script src="../js/vendor/jquery.slim.min.js"><\/script>')</script>
+         <script src="js/bootstrap.bundle.min.js"></script>
+         
+         <!--CSS STYLESHEETS-->
+         <link href="css/uikit.min.css" rel="stylesheet" />
+         <link href = "css/styles.css" rel = "stylesheet"> 
+         <link href = "css/chips.css" rel = "stylesheet"> 
+
+         <!--JS-->
+         <script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script>window.jQuery || document.write('<script src="../js/vendor/jquery.slim.min.js"><\/script>')</script>
+         <script src="js/uikit.min.js"></script>
+         <script src="js/uikit-icons.min.js"></script>
+         <script src="js/chips.js"></script>
+
+    </head>
+    <header>
+        <nav class="uk-navbar-container uk-navbar-transparent" id="top-nav" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo brand" href="index.html">cl/lisaleung</a>
+            </div>
+            <div class="uk-navbar-right">
+        
+                <ul class="uk-navbar-nav">
+                    <!-- change to jump down to featured projects -->
+                    <li class="uk-active active nav-item a-ua p-4">
+                        <a href="index.html">Work</a>
+                    </li>
+                    <li class="nav-item a-ua p-4">
+                        <a href="about.html">About</a>
+                    </li>
+                    <!-- <li class="nav-item a-ua p-4">
+                        <a href="contact.html">Contact</a>
+                    </li> -->
+               
+                    <li class="nav-item a-ua p-4">
+                        <a href="files/Lisa Leung Resume 09.21.21.pdf" target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <br>
+    <br>
+    <body>
+        <div  class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="welcome uk-heading-large">I'm Lisa, </h1>
+                        
+                        <p class="intro">
+                            a first-generation <strong id="label-interdisciplinarian">interdisciplinarian</strong>
+                            who collaborates in
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <strong id="label-research">research</strong>
+                    </div>
+                    <div class="col">
+                        <strong id="label-design">design</strong>
+                    </div>
+                    <div class="col">
+                        <strong id="label-data">data</strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <strong id="label-programming">programming</strong>
+                    </div>
+                    <div class="col">
+                        <strong id="label-communication">communication</strong>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p class="intro">
+                            to co-create value with users, organizations, technology, and systems.
+                            <br>
+                            <br>
+    
+                            I’m currently pursuing a product position after I graduate in May 2023. 
+                        </p>
+                    </div>
+                </div>
+                <div class="sticky-contact">
+                </div><!--end sticky-contact-->
+                <ul class="uk-flex uk-flex-left uk-iconnav">
+                    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+                    <li><a class="uk-padding uk-padding-remove-left"href="mailto:clleung@andrew.cmu.edu"><img id="mail-icon"src="images/icons/email.svg"></a></li>
+                    <li><a class="uk-padding"href="https://github.com/clleung" uk-icon="icon: github; ratio: 3"></a></li>
+                    <li><a class="uk-padding"href="https://www.linkedin.com/in/cllisaleung/" uk-icon="icon: linkedin; ratio: 3"></a></li>
+                </ul>
+            </div>  <!--end container-->
+            <div class="uk-flex uk-flex-center">
+                <!-- <h5 id="arrow-text">Scroll down to view projects</h5> -->
+                <div class="arrow"></div>
+            </div>
+        </div><!--end hero-->
+        <div class="projects container">
+            <!--ROW 1-->
+            <div class="row">
+                <div class="col">
+                    <!-- OppLab Button trigger modal -->
+                    <button type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#opplab-modal">
+                        <img class="thumbnail rounded shadow" src = "images/project-cards/opplab.jpg" alt="...">
+                        <fieldset>
+                            <div class = "chip-group">
+                              <div class = "chip">
+                                <span>research</span>
+                              </div>
+                              <div class = "chip">
+                                <span>team</span>
+                              </div>
+                              <div class = "chip">
+                                <span>writing</span>
+                              </div>
+                            </div>
+                        </fieldset>
+                    </button> 
+                </div> <!--end col-->
+                <div class="col">
+                    <!-- AWS Button trigger modal -->
+                    <button type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#aws-modal">
+                        <img class="thumbnail rounded shadow" src = "images/project-cards/aws.jpg" alt="...">
+                        <fieldset>
+                            <div class = "chip-group">
+                              <div class = "chip">
+                                <span>team</span>
+                              </div>
+                              <div class = "chip">
+                                <span>writing</span>
+                              </div>
+                            </div>
+                        </fieldset>
+                    </button> 
+                </div> <!--end col-->
+            </div><!--end row 1-->
+           <!--ROW 2-->
+           <div class="row">
+                <div class="col">
+                    <!-- CAPSEA Button trigger modal -->
+                    <button type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#capsea-modal">
+                        <img class="thumbnail rounded shadow" src = "images/project-cards/capsea.jpg" alt="...">
+                        <fieldset>
+                            <div class = "chip-group">
+                              <div class = "chip">
+                                <span>team</span>
+                              </div>
+                              <div class = "chip">
+                                <span>nonprofit</span>
+                              </div>
+                              <div class = "chip">
+                                <span>consulting</span>
+                              </div>
+                            </div>
+                        </fieldset>
+                    </button> 
+                </div> <!--end col-->
+                <div class="col">
+                    <!-- Auditbot Button trigger modal -->
+                    <button type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#audit-modal">
+                        <img class="thumbnail rounded shadow" src = "images/project-cards/audit.jpg" alt="...">
+                        <fieldset>
+                            <div class = "chip-group">
+                              <div class = "chip">
+                                <span>team</span>
+                              </div>
+                              <div class = "chip">
+                                <span>design</span>
+                              </div>
+                              <div class = "chip">
+                                <span>user research</span>
+                              </div>
+                            </div>
+                        </fieldset>
+                    </button> 
+                </div> <!--end col-->
+            </div><!--end row 2-->
+            <!--ROW 3-->
+            <div class="row">
+                <div class="col">
+                    <!-- rebloom Button trigger modal -->
+                    <button type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#rebloom-modal">
+                        <img class="thumbnail rounded shadow" src = "images/project-cards/rebloom.jpg" alt="...">
+                        <fieldset>
+                            <div class = "chip-group">
+                              <div class = "chip">
+                                <span>team</span>
+                              </div>
+                              <div class = "chip">
+                                <span>nonprofit</span>
+                              </div>
+                              <div class = "chip">
+                                <span>consulting</span>
+                              </div>
+                            </div>
+                        </fieldset>
+                    </button> 
+                </div> <!--end col-->
+                <div class="col">
+                    <!-- usable privacy Button trigger modal -->
+                    <button type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#usable-modal">
+                        <img class="thumbnail rounded shadow" src = "images/project-cards/usable-privacy.jpg" alt="...">
+                        <fieldset>
+                            <div class = "chip-group">
+                              <div class = "chip">
+                                <span>team</span>
+                              </div>
+                              <div class = "chip">
+                                <span>research</span>
+                              </div>
+                              <div class = "chip">
+                                <span>data</span>
+                              </div>
+                            </div>
+                        </fieldset>
+                    </button> 
+                </div> <!--end col-->
+            </div><!--end row 3-->
+        </div><!--end projects container-->
+        <!-- OppLab Modal -->
+        <div id = "opplab-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered opplab">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Oppenheimer Lab: Psychological Barriers to PPE Usage</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class = "modal-subtitle">Cognitive Psychology Research</p>
+                        <p class = "modal-location">Carnegie Mellon University - Pittsburgh, PA</p>
+                        <br>
+                        <div class="container">
+                            <img class="modalnail mx-auto d-block rounded shadow" src = "images/project-cards/opplab.jpg" alt="...">
+                            <div class = "row">
+                                <div class = "col">
+                                    <p><strong>Timeline:</strong> &ensp; May 2020 - Present</p>
+
+                                    <p><strong>Team:</strong> &ensp; Dr. Daniel Oppenheimer (PI), Dr. Christina Boyce-Jacino, Aysar Gharaibeh</p>
+                                    
+                                    <p><strong>Role:</strong> &ensp; Contributor, Researcher</p>
+                                </div>
+                                <div class = "col">
+                                    <p><strong>Deliverables:</strong> &ensp; Driving Simulator Environment, Documentation, Progress Reports, Surveys.
+                                    </p>
+                                    <p><strong>Tools:</strong> &ensp; Carnetsoft Driving Simulator Software, Qualtrics, Figma.
+                                    </p>
+                                    <p><strong>Skills:</strong> &ensp; Study Design, Programming, Data Collection and Analysis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!--end container-->        
+                    </div><!--end modal-body-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn to-work" disabled>Coming Soon!</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div> <!--end modal-footer-->
+                </div><!--end modal-content-->
+            </div> <!--end modal-dialog-->
+        </div><!--end opplab modal-->
+        <!-- AWS Modal -->
+        <div id = "aws-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered opplab">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Amazon Web Services - Docs Team
+                        </h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class = "modal-subtitle">Technical Writing Internship</p>
+                        <p class = "modal-location">Amazon - Seattle, WA</p>
+                        <br>
+                        <div class="container">
+                            <img class="modalnail mx-auto d-block rounded shadow" src = "images/project-cards/aws.jpg" alt="...">
+                            <div class = "row">
+                                <div class = "col">
+                                    <p><strong>Timeline:</strong> &ensp; June  - August 2021
+                                    </p>
+                                    <p><strong>Team:</strong> &ensp; Amazon Web Services Customer Experience: QuickSight Documentation</p>
+                                    <p><strong>Role:</strong> &ensp; Technical Writing Intern</p>
+                                </div>
+                                <div class = "col">
+                                    <p><strong>Deliverables:</strong> &ensp; Walkthrough Documentation, Project Artifacts, Data Model, Datasets, QuickSight Q Example, Poster Presentation.
+                                    </p>
+                                    <p><strong>Tools:</strong> &ensp; XML, Excel, QuickSight Q. 
+                                    </p>
+                                    <p><strong>Skills:</strong> &ensp; Information Architecture, Documentation Writing, Database Design. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!--end container-->
+                    </div><!--end modal-body-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn to-work" disabled>Coming Soon!</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div> <!--end modal-footer-->
+                </div><!--end modal-content-->
+            </div> <!--end modal-dialog-->
+        </div><!--end aws modal-->
+        <!-- CAPSEA Modal -->
+        <div id = "capsea-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered opplab">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Citizens Against Physical, Sexual, and Emotional Abuse (CAPSEA) Inc.
+                        </h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class = "modal-subtitle">Consulting Project</p>
+                        <p class = "modal-location">Carnegie Mellon University - Pittsburgh, PA</p>
+                        <br>
+                        <div class="container">
+                            <img class="modalnail mx-auto d-block rounded shadow" src = "images/project-cards/capsea.jpg" alt="...">
+                            <div class = "row">
+                                <div class = "col">
+                                    <p><strong>Timeline:</strong> &ensp; September - December 2021.
+                                    </p>
+                                    <p><strong>Team:</strong> &ensp; Meredith Levene, Lisa Leung, Frank Zhou, Jialu Xiang
+                                    </p>
+                                    <p><strong>Role:</strong> &ensp; Project Lead, Consultant
+                                    </p>
+                                </div>
+                                <div class = "col">
+                                    <p><strong>Deliverables:</strong> &ensp; Current State Assessment, Staff & Subject Matter Expert Interviews, Business and Recommendation Plan, Training and Implementation Plan, Presentation.
+                                    </p>
+                                    <p><strong>Course:</strong> &ensp; Management Consulting. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!--end container-->
+                    </div><!--end modal-body-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn to-work" disabled>Coming Soon!</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div> <!--end modal-footer-->
+                </div><!--end modal-content-->
+            </div> <!--end modal-dialog-->
+        </div><!--end capsea modal-->
+        <!-- AuditBot Modal -->
+        <div id = "audit-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered opplab">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Instagram AuditBot *
+                        </h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class = "modal-subtitle">Auditing Algorithmic Bias on Instagram</p>
+                        <p class = "modal-location">Carnegie Mellon University - Pittsburgh, PA</p>
+                        <br>
+                        <div class="container">
+                            <img class="modalnail mx-auto d-block rounded shadow" src = "images/project-cards/audit.jpg" alt="...">
+                            <div class = "row">
+                                <div class = "col">
+                                    <p><strong>Timeline:</strong> &ensp; October - December 2021.
+                                    </p>
+                                    <p><strong>Team:</strong> &ensp; Martina Tan (PM), John Jongyeon Chae, Priya Jain, Yumi Sato. 
+                                    </p>
+                                    <p><strong>Role:</strong> &ensp; Designer, User Researcher, Writer.
+                                    </p>
+                                </div>
+                                <div class = "col">
+                                    <p><strong>Deliverables:</strong> &ensp; Service Design, Figma Prototype, User Research Reports. 
+                                    </p>
+                                    <p><strong>Tools:</strong> &ensp; Figma, Generative Think-Aloud, Speed Dating, Affinity Maps. 
+                                    </p>
+                                    <p><strong>Course:</strong> &ensp; User Centered Research and Evaluation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!--end container-->
+                    </div><!--end modal-body-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn to-work" disabled>Coming Soon!</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div> <!--end modal-footer-->
+                </div><!--end modal-content-->
+            </div> <!--end modal-dialog-->
+        </div><!--end audit modal-->
+        <!-- rebloom Modal -->
+        <div id = "rebloom-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered opplab">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">re:Bloom: Royally Fit 
+                        </h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class = "modal-subtitle">Royally Fit Website Redesign and Redevelopment
+                        </p>
+                        <p class = "modal-location">Remote - Pittsburgh, PA</p>
+                        <br>
+                        <div class="container">
+                            <img class="modalnail mx-auto d-block rounded shadow" src = "images/project-cards/rebloom.jpg" alt="...">
+                            <div class = "row">
+                                <div class = "col">
+                                    <p><strong>Timeline:</strong> &ensp; October - December 2021.
+                                    </p>
+                                    <p><strong>Team:</strong> &ensp; Abbey Mui (PM), Ademitunde Adenuga.
+                                    </p>
+                                    <p><strong>Role:</strong> &ensp; Volunteer Consultant, Designer and Developer
+                                    </p>
+                                </div>
+                                <div class = "col">
+                                    <p><strong>Deliverables:</strong> &ensp; Marketing Strategy, Brand Kit, Surveys, SEO Keywords, Prototype, Redeveloped Website.
+                                    </p>
+                                    <p><strong>Tools:</strong> &ensp; Shopify, PageSpeed Insights, Figma, Bootstrap, HTML, CSS, jQuery.
+                                    </p>
+                                    <p><strong>Course:</strong> &ensp; Front-End Programming, UI/UX Design, SEO, User Testing & Interviews.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!--end container-->
+                    </div><!--end modal-body-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn to-work" disabled>Coming Soon!</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div> <!--end modal-footer-->
+                </div><!--end modal-content-->
+            </div> <!--end modal-dialog-->
+        </div><!--end rebloom modal-->
+        <!-- usable privacy Modal -->
+        <div id = "usable-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered opplab">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Data Deletion and Cookie Control: Do Tools Facilitate Privacy?
+                        </h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class = "modal-subtitle">Usable Privacy and Security Research
+                        </p>
+                        <p class = "modal-location">Carnegie Mellon University - Pittsburgh, PA</p>
+                        <br>
+                        <div class="container">
+                            <img class="modalnail mx-auto d-block rounded shadow" src = "images/project-cards/usable-privacy.jpg" alt="...">
+                            <div class = "row">
+                                <div class = "col">
+                                    <p><strong>Timeline:</strong> &ensp; March - May 2021.
+                                    </p>
+                                    <p><strong>Team:</strong> &ensp; Alexander Xu, Jiamin Wang, Kate Maffey, Kristen Buse, Lucas Falivene.
+                                    </p>
+                                    <p><strong>Role:</strong> &ensp; Researcher.
+                                    </p>
+                                    <p><strong>Course:</strong> &ensp; Usable Privacy and Security.
+                                    </p>
+                                </div>
+                                <div class = "col">
+                                    <p><strong>Deliverables:</strong> &ensp; IRB Approval, Literature Review, Presentation, Quantitative Data Analysis, Pilot Study and Paper.
+                                    </p>
+                                    <p><strong>Tools:</strong> &ensp; Cookiebot, OneTrust, Transcend, Excel, Zoom.
+                                    </p>
+                                    <p><strong>Skills:</strong> &ensp; Programming, Thematic Encoding, Data Collection and Analysis, Experimental Design.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!--end container-->
+                    </div><!--end modal-body-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn to-work" disabled>Coming Soon!</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div> <!--end modal-footer-->
+                </div><!--end modal-content-->
+            </div> <!--end modal-dialog-->
+        </div><!--end usable privacy modal-->
+    </body>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-main">
+            <div class="uk-child-width-expand@s" uk-grid>
+                <div class="uk-width-1-3 ">
+                    <div class="uk-card uk-card-body">
+                        <h3 class="brand ">cl/lisaleung</h3>
+                        <h5 class="footer-subtitle">Cho-Lin Lisa Leung</h5>
+                        <ul class="uk-flex uk-flex-left uk-iconnav">
+                            <!--<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+                            <li><a class="uk-padding uk-padding-remove-left"href="mailto:clleung@andrew.cmu.edu"><img id="mail-icon"src="images/icons/email.svg"></a></li>
+                            <li><a class="uk-padding"href="https://github.com/clleung" uk-icon="icon: github; ratio: 3"></a></li>
+                            <li><a class="uk-padding"href="https://www.linkedin.com/in/cllisaleung/" uk-icon="icon: linkedin; ratio: 3"></a></li>
+                        </ul>
+                    </div>
+                 </div>
+                 <div class = "bot-layer">
+                    <br>
+                    <br>
+                    <p></p>
+                    
+                    <a class="footer-links" href="index.html">Work</a>
+                    <br>
+                    <br>
+                    <a class="footer-links" href="about.html">About</a>
+                    <br>
+                    <br>
+                    <!-- <a class="footer-links" href="contact.html">Contact</a>
+                    <br>
+                    <br> -->
+                    <a class="footer-links" href="files/Lisa Leung Resume 09.21.21.pdf" target="_blank">Resume</a>
+                  </div> <!--end top-layer-->
+                  <div class = "mid-layer">
+                      <br>
+                      <br>
+                    <p>
+                        Hosted on Firebase and Github. Made with <a href = "https://getbootstrap.com/docs/4.0/about/license/"><strong>Bootstrap</strong></a> and <a href="https://getuikit.com/"><strong>UIkit</strong></a>.
+                        <br>
+                        <br>
+                        This site is maintained by <a href = "https://github.com/clleung" ><strong>Lisa Leung</strong></a>. View this project on <a href = "https://github.com/clleung/portfolio"><strong>GitHub</strong></a>
+                    </p>
+                  </div> <!--end mid-layer-->
+                  <div class = "top-layer">
+                      <br>
+                    <p>
+                      &copy; 2022 Lisa Leung 
+                    </p>
+                    
+                  </div> <!--end bot-layer-->
+            </div>
+        </div><!--end footer-main-->
+    </footer>
+</html>
