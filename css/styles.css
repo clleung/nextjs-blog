@@ -285,9 +285,32 @@ X. Modal Styles
 }
 .project-cards {
     background-color: #D4E8F7;
+    width: 35rem;
 }
 .card-content {
     background-color: #D4E8F7;
+}
+.card-title {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 4rem;
+    font-weight: 600;
+    font-style: italic;
+    /* top left/right bottom */
+    padding-top: 1rem;
+}
+.card-role {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+    margin: 0rem;
+}
+.card-text {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+
 
 }
 .to-work{
