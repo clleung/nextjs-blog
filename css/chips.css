@@ -10,7 +10,7 @@ button{
     top: -335px;
     bottom: 20px;
     right: 20px;
-    color: white;
+    color: #7DBAE8;
     padding-left: 30px;
     padding-right: 20px;
     
@@ -23,11 +23,11 @@ button{
     content:"done"
   }
   .chip > * {
-    margin-right:0.3rem;
-    margin-left:0.3rem;
-    color: #576772;
+    /* margin-right:0.3rem;
+    margin-left:0.3rem; */
+    color: #F6FAFD;
     /* adjustments */
-    padding: 0.1rem 0.5rem;
+    padding: 0rem 1rem;
   }
   .chip input {
     display: none;
@@ -58,14 +58,15 @@ button{
   }
   .chip {
     transition: all 0.3s ease-in-out;
-    background-color: #EEF6FC;
+    background-color: #7DBAE8;
     border-radius: 15px;
-    border: 1px solid #AAC0CF;
+    border: 1px solid #7DBAE8;
     display: inline-flex;
     align-items:center;
     padding: 4px 6px 4px 6px;
-    margin-right:6px;
-    margin-bottom:6px;
+    /* margin-right:6px;
+    margin-bottom:6px; */
+    margin: 0rem 0.5rem;
   }
   .chip i.material-icons {
     font-size: 18px;
