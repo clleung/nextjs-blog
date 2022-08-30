@@ -94,9 +94,11 @@ body {
     text-decoration: none;
     height: 100vh;
 }
-h3 {
+h1,h2,h3,h4,h5,h6 {
     color: #171A1C;
     font-family: 'Jost', sans-serif;
+}
+h3 {
     font-size: 1.6rem;
     font-weight: 700;
 }
@@ -170,7 +172,60 @@ strong {
 .project-hero {
     height: 50vh;
     width: 100vw;
-    background-color: white;
+}
+.project-hero-grid {
+    background-color: #D4E8F7;
+
+}
+.project-summary {
+    background-color: #F6FAFD;
+    display: block;
+    padding: 1rem 1rem 2rem;
+}
+.summary-container {
+    width: 80vw;
+    padding: 0rem 1rem;
+}
+.summary-contents {
+    line-height: 2rem;
+}
+.project-chips {
+    margin: 1rem 0rem;
+    
+}
+.project-title {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: italic;
+    padding: 3.5rem 3rem;
+    text-align: center;
+}
+.project-role {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    padding: 1rem;
+    text-align: center;
+}
+.project-note {
+    
+    width: 80vw;
+}
+.note {
+    background-color: #175482;
+    color: #F6FAFD;
+    padding: 1rem;
+    margin: 1rem 0rem;
+}
+.note-header {
+    color: #F6FAFD;
+    font-size: 2rem;
+}
+.note-content {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
 }
 /********************* 
  4. Special Text Styles 
