@@ -285,14 +285,20 @@ X. Modal Styles
 }
 .project-cards {
     background-color: #D4E8F7;
-    width: 35rem;
+    width: 31rem;
+    height: 18rem;
+    margin: 1rem 0rem;
+}
+.card-chips {
+    position: relative;
+    
 }
 .card-content {
     background-color: #D4E8F7;
 }
 .card-title {
     font-family: 'Bodoni Moda', serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     font-style: italic;
     /* top left/right bottom */
@@ -300,7 +306,7 @@ X. Modal Styles
 }
 .card-role {
     font-family: 'Bodoni Moda', serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     font-style: italic;
     margin: 0rem;
