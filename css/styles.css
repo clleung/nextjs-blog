@@ -117,9 +117,7 @@ strong {
 /* strong:hover {
     color: #2172AB;
 } */
-.container {
 
-}
 /********************* 
  2. Navigation Styles 
  *********************/
@@ -170,19 +168,26 @@ strong {
     height: 90vh;
 
 }
+#hero {
+    padding: 0.5rem 1.2rem;
+}
+.hero-img {
+    border-radius: 15rem 30rem 5rem 20rem;
+}
 /********************* 
  4. Special Text Styles 
  *********************/
-.intro{
+.hero-intro{
     font-family: 'Mulish', sans-serif;
     font-weight: 300;
-    font-size: 2rem;
-    line-height: 2.6rem;
+    font-size: 2.5rem;
+    line-height: 4rem; /* 2.5rem * 1.6 */
 }
-.welcome{
-    font-family: 'Bodoni Moda', serif;
-    font-size: 4rem;
+.hero-welcome{
+    font-family: 'Jost', sans-serif;
+    font-size: 4.2rem;
     font-weight: 600;
+    margin-top: 5rem;
 }
 [id ^= "label"]{
     /* 3.6  */
@@ -291,6 +296,7 @@ X. Modal Styles
 }
 .card-chips {
     position: relative;
+    top: -0.1rem;
     
 }
 .card-content {
@@ -302,7 +308,7 @@ X. Modal Styles
     font-weight: 600;
     font-style: italic;
     /* top left/right bottom */
-    padding-top: 1rem;
+    padding-top: 0.75rem;
 }
 .card-role {
     font-family: 'Bodoni Moda', serif;
