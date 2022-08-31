@@ -173,10 +173,20 @@ strong {
     height: 50vh;
     width: 100vw;
 }
-.project-hero-grid {
+/* minimal = not a full write-up */
+.project-hero-minimal-grid {
     background-color: #D4E8F7;
+    margin-top: 4rem;
 
 }
+.project-hero-grid {
+    width: 100vw;
+
+}
+#auditbot-blue {
+    background-color: #0a0d31;
+}
+
 .project-summary {
     background-color: #F6FAFD;
     display: block;
@@ -226,6 +236,12 @@ strong {
 .note-content {
     font-size: 1.2rem;
     line-height: 1.9rem;
+}
+.project-overview {
+    background-color: #F6FAFD;
+}
+.process-content {
+    width: 80%;
 }
 /********************* 
  4. Special Text Styles 
