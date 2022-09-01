@@ -172,6 +172,7 @@ strong {
 .hero-statement {
     font-size: 1.6rem;
     line-height:2.56rem; /**1.6*1.6**/
+    font-weight: 400;
 }
 .project-hero {
     height: 50vh;
@@ -243,6 +244,10 @@ strong {
 }
 .project-overview {
     background-color: #F6FAFD;
+}
+.process-header {
+    margin: 0.5rem 3rem 0rem;
+    
 }
 .process-content {
     width: 80%;
