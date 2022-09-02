@@ -395,43 +395,23 @@
             <div class="process-design">
                 <div class="process-header container">
                     <h1>Design</h1>
-                    <subtitle>Product-Service Design •  Additional Design Considerations •  Presentation</subtitle>
+                    <subtitle>Draft Data Model •  Draft Conceptual Model •  Incorporating the Data Model into Documentation</subtitle>
                     <p>
-                        Developed AuditBot (in Instagram) as an intervention that met user needs of simplicity, transparency, and anonymity.
+                        Explored an example (created with an example data model and dataset) to support the walkthrough documentation and abstract technicalities from the user.
                     </p>
                 </div><!--process-header container-->
                 <div class="process-content container">
                     <!-- row 1 -->
                     <div class="row">
                         <div class="col-6">
-                            <h2>Product-Service Design</h2>
+                            <h2>Draft Data Model</h2>
                             <p>
-                                Analyzed user research and insights to develop AuditBot to meet end-user needs.
-                                </br>
-                                </br>
-                                We decided to use Instagram as a platform to design with, as it had:
-                                <ul>
-                                    <li>
-                                        Sufficient content (potential for algorithmic bias).
-                                    </li>
-                                    <li>
-                                        Opportunity to incorporate an interactive agent to guide the user through the auditing process.
-                                    </li>
-                                    <li>
-                                        Design patterns we could use as inspiration for the user interface.
-                                    </li>
-                                </ul>
-                                </br>
-                                Accounted for Instagram’s business needs and sought to co-create value by way of increasing end-user and platform communication and leveraging end-user relationships.
-                                </br>
-                                </br>
-                                We also took inspiration from Instagram’s mode to hide likes from end-users when anonymizing user information. Instead of showing who reported the post, it would be a number of relationships the user had. 
-
+                                I proposed centering the example around an example music streaming service, as there would be a large amount of data publicly available and the proliferation of streaming services across the world.
                             </p>
                         </div><!--end col-->
                         <div class="col-6">
                             <figure>
-                                <img class="" src="assets/auditbot-2021/public-jpg/design-auditbot-chatbot.jpg" alt="">
+                                <img class="" src="assets/aws-2021/public-jpg/design-draft-conceptual-model.jpeg" alt="">
                                 <figcaption>Figure 8. Brainstorming Auditbot Chatbot Design - Using Anonymity, Transparency, and Simplicity.</figcaption>
                               </figure>
                         </div><!--end col-->
@@ -440,38 +420,122 @@
                     <div class="row">
                         <div class="col-8">
                             <figure>
-                                <img class="" src="assets/auditbot-2021/public-jpg/additional-photo-doc-2-ig.jpg" alt="">
+                                <img class="" src="assets/aws-2021/public-jpg/design-draft-logical-model.jpeg" alt="">
                                 <figcaption>Figure 9. Considerations for Auditbot's Usage within Instagram. </figcaption>
                               </figure>
                         </div><!--end col-->
                         <div class="col-4">
-                            <h2>Additional Design Considerations</h2>
+                            <h2>Draft Conceptual Model</h2>
                             <p>
-                                We accounted for Instagram’s business needs and sought to co-create value by way of increasing end-user and platform communication and leveraging end-user relationships.
+                                Due to the potential widespread use of the documentation, it was also significant to explore opportunities that would not result in potential legal issues, such as using a popular song in the dataset.
                                 </br>
                                 </br>
-                                We also took inspiration from Instagram’s model to hide likes from end-users when anonymizing user information. Instead of showing who reported the post, it would be a number of relationships the user had that reported.
+                                The choice to focus on a music streaming database also came from prior experience developing a Spotify database in SQL (case study), which would allow me to focus more on learning Amazon QuickSight Q and integrating the example into the walkthrough documentation. 
                             </p>
                             
                         </div><!--end col-->
                     </div><!-- end row 2 -->
-                    <!-- row 3 -->
+                </div><!--end process-content-->
+            </div><!--end process-design-->
+            <div class="process-iterate">
+                <div class="process-header container">
+                    <h1>Iterate</h1>
+                    <subtitle>Updated Conceptual Model  •  Updated Logical Model  •  Applying the Data Model to Amazon QuickSight Q</subtitle>
+                </div><!--process-header container-->
+                <div class="process-content container">
+                    <!-- row 1 -->
                     <div class="row">
-                        <div class="col-6">
-                            <h2>Presentation</h2>
+                        <div class="col-4">
+                            <h2>Updated Conceptual Model</h2>
                             <p>
-                                We communicated AuditBot’s unique value proposition at a remote poster session to over 30 attendees. 
+                                After talking to subject matter experts (SME) about Power Business Intelligence Analytics to understand the use cases more deeply, I pivoted to focus more on streaming data. Specifically, how often a song would be played at different points in time. 
+                                </br>
+                                </br>
+                                In theory, this use case would be easily extensible to other industries, such as e-commerce (purchases of an item), content creation (views over time), and general business cases (revenue/cost over time).
                             </p>
                         </div><!--end col-->
-                        <div class="col-6">
+                        <div class="col-8">
                             <figure>
-                                <img class="" src="assets/auditbot-2021/public-jpg/design-poster-solution.jpg" alt="">
-                                <figcaption>Figure 10. Proposed Solution - Auditbot Chatbot in Instagram.</figcaption>
+                                <img class="" src="assets/aws-2021/public-jpg/_iterate-conceptual-model-refined.jpeg" alt="">
+                                <figcaption>Figure 11. Brainstorming Mechanics for Simplifying User Communication after Auditing Algorithmic Bias.</figcaption>
+                              </figure>
+                        </div><!--end col-->
+                    </div><!-- end row 1 -->
+                    <!-- row 2 -->
+                    <div class="row">
+                        <div class="col-8">
+                            <figure>
+                                <img class="" src="assets/aws-2021/public-jpg/iterate-logical-data-model.jpeg" alt="">
+                                <figcaption>Figure 12. In-Process Design of Auditbot.</figcaption>
+                              </figure>
+                        </div><!--end col-->
+                        <div class="col-4">
+                            <h2>Updated Logical Model</h2>
+                            <p>
+                                As a result, the use of the data model was reduce from a more holistic view of the business—revenue streams and cost streams—to focusing on streaming traffic, which involved fewer entities than the original (5 tables instead of 7).
+                            </p>
+                        </div><!--end col-->
+                    </div><!-- end row 2 -->
+                    <!-- row 3 -->
+                    <div class="row">
+                        <div class="col-4">
+                            <h2>Applying the Data Model to Amazon QuickSight Q</h2>
+                            <p>
+                                Although I tried to obtain approval to use publicly available datasets, there were potential legal limitations, so I created datasets with Mockaroo. 
+                                </br>
+                                </br>
+                                This allowed me to purposefully inject trends into the data that would be searchable with Amazon QuickSight Q.
+                                </br>
+                                </br>
+                                After testing Amazon QuickSight Q, I refined the process in the documentation once more:
+                                <ol>
+                                    <li>
+                                        Anticipate questions.
+                                    </li>
+                                    <li>
+                                        Create a topic.
+                                    </li>
+                                    <li>
+                                        Update the topic to be natural language friendly.
+                                    </li>
+                                    <li>
+                                        Test the topic.
+                                    </li>
+                                </ol>
+                            </p>
+                        </div><!--end col-->
+                        <div class="col-8">
+                            <figure>
+                                <img class="" src="assets/aws-2021/public-jpg/iterate-sample-vis-1.jpeg" alt="">
+                                <figcaption>Figure 12. In-Process Design of Auditbot.</figcaption>
                               </figure>
                         </div><!--end col-->
                     </div><!-- end row 3 -->
                 </div><!--end process-content-->
-            </div><!--end process-design-->
+            </div><!--end process-iterate-->
+            <div class="process-deliver">
+                <div class="process-header container">
+                    <h1>Deliver</h1>
+                    <subtitle>Presentation </subtitle>
+                </div><!--process-header container-->
+                <div class="process-content container">
+                    <!-- row 1 -->
+                    <div class="row">
+                        <div class="col-4">
+                            <h2>Reflection</h2>
+                            <p>
+                                At the end of my internship, I delivered a final presentation to the product manager of Amazon QuickSight Q, a draft walkthrough, the example in Amazon QuickSight Q, the data model and datasets, and the project artifacts.
+                            </p>
+                        </div><!--end col-->
+                        <div class="col-8">
+                            <figure>
+                                <img class="" src="assets/aws-2021/public-jpg/deliver-draft-graphics-sketch.jpeg" alt="">
+                                <figcaption>Figure 11. Brainstorming Mechanics for Simplifying User Communication after Auditing Algorithmic Bias.</figcaption>
+                              </figure>
+                        </div><!--end col-->
+                    </div><!-- end row 1 -->
+                </div><!--end process-content-->
+            </div><!--end process-deliver-->
             <div class="process-next-steps">
                 <div class="process-header container">
                     <h1>Next Steps</h1>
@@ -483,28 +547,18 @@
                         <div class="col-4">
                             <h2>Reflection</h2>
                             <p>
-                                Given more time, we would have explored our service design of AuditBot and supported our design with additional user research, especially in validating our use of an intelligent agent (chatbot) to provide confidence, transparency, and functionality.‍
+                                Given more time, I would have liked to create a walkthrough that could be independent from the example. This way, users would be able to dive deeper into the steps if needed, but otherwise be able to achieve their goal of getting the necessary information to complete the task as quickly as possible. 
                                 </br>
                                 </br>
-                                Further, we would have focused on testing multiple use cases for how we envision AuditBot, such as: its prompting of user action, the integration of the auditing process into Instagram’s user interface, and end-users’ understanding of the difference between conventional reporting and auditing. ‍
+                                If I could redo this project, I would have spent more time talking with users to deeply understand the use cases behind using Amazon QuickSight Q, and how documentation could be written (or visualized) to help them understand the product without having to explain the complexity of the technology underlying it. 
                                 </br>
                                 </br>
-                                <strong>Additional Considerations</strong>
-                                <ul>
-                                    <li>
-                                        Understanding how technological limitations might play into developing Auditbot, use cases where it might be better not to have the chatbot.
-                                    </li>
-                                </br>
-                                    <li>
-                                        If there’s a threshold for how many users someone needs to have for this to be sufficiently anonymous but useful (i.e. if a user has less than 5 friends, should relationships that audited be shown?)
-                                    </li>
-                                </ul>
-                                
+                                Takeaways from this project: as a novice technical writer, I was shown how well-written instructions and micro-visualizations could impact the user experience. Coming from a technology and design perspective, it was easier to imagine the bigger picture, but when I was documenting the process, I found it immensely difficult to whittle down a single task into tiny, tangible steps customized to a specific use case. From this project, I learned to not only look at the big picture for users (scenarios, personas, journeys), but also their real-time touchpoints with a product or service (how they get something done, where they go next, where that fits within their entire interaction with the organization). 
                             </p>
                         </div><!--end col-->
                         <div class="col-8">
                             <figure>
-                                <img class="" src="assets/auditbot-2021/public-jpg/next-steps-chatbot-mechanics.jpg" alt="">
+                                <img class="" src="assets/aws-2021/public-jpg/next-steps-sample-vis-3.jpeg" alt="">
                                 <figcaption>Figure 11. Brainstorming Mechanics for Simplifying User Communication after Auditing Algorithmic Bias.</figcaption>
                               </figure>
                         </div><!--end col-->
@@ -513,31 +567,17 @@
                     <div class="row">
                         <div class="col-8">
                             <figure>
-                                <img class="" src="assets/auditbot-2021/public-jpg/next-steps-in-process-photo-of-team.jpg" alt="">
+                                <img class="" src="assets/aws-2021/public-jpg/iterate-sample-vis-2.jpeg" alt="">
                                 <figcaption>Figure 12. In-Process Design of Auditbot.</figcaption>
                               </figure>
                         </div><!--end col-->
                         <div class="col-4">
                             <h2>Outcomes</h2>
                             <p>
-                                From this project, I learned the following:
-                                <ul>
-                                    <li>
-                                        <p>
-                                            Lightweight user research (5 users per round) is sufficient to guide next steps.                                         
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            The intersection of user research and product-service design is buffered by insights from the user to establish design considerations. 
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Users' needs (privacy, transparency) must be significant in the design process, or there may be future risks.  
-                                        </p>
-                                    </li>
-                                </ul>
+                                Although the documentation I wrote was never published publicly, I was the first within the AWS Documentation team to integrate a database example into their documentation, as well as the first to write documentation for future writers to use if they so choose. 
+                                </br>
+                                </br>
+                                For the Amazon QuickSight Q documentation team, the data model and dataset I created were to be used in their production team for testing. I was also able to provide valuable insight for how I understood the product from a technical perspective. 
                             </p>
                         </div><!--end col-->
                     </div><!-- end row 2 -->
@@ -548,7 +588,7 @@
     <footer>
         <div class="footer-main">
             <div class="uk-child-width-expand@s" uk-grid>
-                <div class="uk-width-1-3 ">
+                <div class="uk-width-1-3 ">  
                     <div class="uk-card uk-card-body">
                         <h3 class="footer-brand brand ">cl/lisaleung</h3>
                         <h5 class="footer-subtitle">Cho-Lin Lisa Leung</h5>
