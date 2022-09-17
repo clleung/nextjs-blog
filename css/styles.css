@@ -396,6 +396,12 @@ X. Modal Styles
     height: 18rem;
     margin: 1rem 0rem;
 }
+.project-cards:hover {
+/* from https://cssgenerator.org/box-shadow-css-generator.html */
+    box-shadow: 10px 10px 89px 0px rgba(156,182,201,0.75);
+    -webkit-box-shadow: 10px 10px 89px 0px rgba(156,182,201,0.75);
+    -moz-box-shadow: 10px 10px 89px 0px rgba(156,182,201,0.75);
+}
 .card-chips {
     position: relative;
     top: -1rem;
